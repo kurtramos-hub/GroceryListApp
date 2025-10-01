@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/glossy_background"
+    tools:context=".LoginActivity">
+
+    <!-- Glossy Glass Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp"
+        android:background="@drawable/glossy_card_background"
+        android:elevation="16dp"
+        android:layout_margin="16dp"
+        android:outlineSpotShadowColor="#80FFFFFF"
+        android:outlineAmbientShadowColor="#80FFFFFF">
+
+        <!-- Glossy Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GrocyList"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-light"
+            android:shadowColor="#80000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="8"
+            android:letterSpacing="0.08"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back"
+            android:textSize="16sp"
+            android:textColor="#E0FFFFFF"
+            android:layout_marginBottom="32dp"
+            android:shadowColor="#80000000"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <!-- Email Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#20000000"
+            app:boxStrokeColor="#80FFFFFF"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:startIconDrawable="@android:drawable/ic_dialog_email"
+            app:startIconTint="#80FFFFFF"
+            app:hintTextColor="#80FFFFFF"
+            app:placeholderTextColor="#80FFFFFF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="52dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B3FFFFFF"
+                android:background="@drawable/glossy_edittext_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="#20000000"
+            app:boxStrokeColor="#80FFFFFF"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp"
+            app:startIconDrawable="@android:drawable/ic_lock_lock"
+            app:startIconTint="#80FFFFFF"
+            app:hintTextColor="#80FFFFFF"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#80FFFFFF"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:minHeight="52dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#B3FFFFFF"
+                android:background="@drawable/glossy_edittext_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Glossy Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/glossy_button_background"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:stateListAnimator="@null"
+            app:icon="@android:drawable/ic_media_play"
+            app:iconGravity="textEnd"
+            app:iconTint="#FFFFFF"
+            app:iconSize="24dp"
+            android:letterSpacing="0.02"
+            style="@style/Widget.MaterialComponents.Button"/>
+
+        <!-- Register Link -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:text="Don't have an account? Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="#80FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/glossy_clickable_background"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</LinearLayout>
